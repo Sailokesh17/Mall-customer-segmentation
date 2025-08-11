@@ -1,0 +1,8 @@
+# Drop CustomerID
+df = df.drop("CustomerID", axis=1)
+
+# Convert Gender to numeric
+df["Gender"] = df["Gender"].map({"Male": 0, "Female": 1})
+
+# Check for nulls
+print(df.isnull().sum())
