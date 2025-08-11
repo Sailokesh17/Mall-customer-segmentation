@@ -1,0 +1,6 @@
+# Load the dataset
+df = pd.read_csv("/content/Mall_Customers.csv")
+
+# Preview data
+print(df.head())
+print(df.info())
